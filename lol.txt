@@ -1,0 +1,1 @@
+sudo bash -c 'source /etc/hadoop-alerts/mail.conf; printf "From: %s\nTo: %s\nSubject: Hadoop SMTP test\n\nTest message from %s\n" "$SENDER" "$RECIPIENT" "$(hostname)" | msmtp -t'
